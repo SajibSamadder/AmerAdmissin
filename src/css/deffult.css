@@ -1,0 +1,45 @@
+body {
+  padding: 0 !important;
+  margin: 0;
+  overflow: inherit !important;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a,
+span,
+b,
+image,
+i,
+input,
+button {
+  display: inline-block;
+  color: #000;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.w-20 {
+  width: 20%;
+}
+.w-60 {
+  width: 60%;
+}

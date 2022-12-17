@@ -1,0 +1,122 @@
+.header {
+  background: #f6f6f8;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 11;
+}
+.manu_ul > li {
+  padding: 17px 20px;
+  font-size: 1;
+}
+.manu_ul > li > a {
+  position: relative;
+  padding-right: 15px;
+}
+.manu_ul > li > a.active::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  width: 13px;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(90deg);
+  top: 50%;
+  left: 100%;
+  margin-top: 3px;
+  transition: 0.3s;
+}
+.manu_ul > li > a.active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 2px;
+  width: 13px;
+  background-color: #000;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 100%;
+  margin-top: 3px;
+  transition: 0.3s;
+}
+.manu_ul li.active > .pane {
+  display: block;
+  z-index: 2;
+}
+.manu_ul li.active > a::after {
+  opacity: 0;
+}
+.pane-section .nav {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #000;
+}
+.pane {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(50, 50, 50, 0.221);
+  transition: 0.5s;
+  animation: animateIn;
+}
+
+.pane-section .nav {
+  border: none;
+  color: #000;
+}
+.pane-section .nav button {
+  border: none;
+}
+.pane-section .nav button:hover {
+  border: none;
+}
+.mega_children a {
+  color: #000;
+}
+
+.pane-section .nav {
+  border: none;
+  border-right-color: currentcolor;
+  border-right-style: none;
+  border-right-width: medium;
+  color: #000;
+  border-right: 1px solid #000;
+  padding-right: 10px;
+}
+.mega_tile {
+  color: #000;
+}
+.pane {
+  background-color: #fff;
+}
+.mega_children {
+  display: flex;
+}
+.mega_children_left {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: green !important;
+  color: #fff !important;
+}
+.header_login_wrapper > a {
+  padding: 8px 40px;
+  border: 1px solid #03ff2a;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.hide_megamanu {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  display: none;
+}
